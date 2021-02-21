@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+    <link rel="icon" type="image/png" href="IMAGES\2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="border-bottom:2px solid green;">
+       <div class="topnav">
+        <div class="search-container">
+          <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+            <button type="submit" style="margin-right:2.2em;"><i class="fa fa-search"></i></button>
+          </form>
+          </div>
+           <div class="top" style="float:right;">
+           <span class="emergencyNo" onClick="openNav()"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;Emergency No &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+            <span class="ambulance" onClick="openNav()"style="float:right" ><a href="#"><i  class="fa fa-ambulance fa-2x" aria-hidden="true"></i></a></span>
+           </div>
+           <div class="top" style="float:right;">
+            <span class="emergencyNo"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact &nbsp;</a></span>
+            <span class="ambulance"style="" ><a href="contact.html"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="top" style="float:right;">
+             <span class="emergencyNo"><a href="aboutus.html"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp;About &nbsp;</a></span>
+             <span class="ambulance"style="" ><a href="aboutus.html"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="top" style="float:right;">
+             <span class="emergencyNo"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home &nbsp;</a></span>
+             <span class="ambulance"style="" ><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></span>
+           </div>
+          </div>
+          <div class="sticky" id="myTopnav">
+            <div class="logo">
+           <img class="dropdown" title="Hospiatl" src="IMAGES\2.png" alt="Hospiatl Logo">
+            </div>
+          <div class="sidepanel" id="mySidepanel">
+            <span class="cross"><a href="javascript:void(0)" class="closebtnOfLinks" onClick="closeNavOfLinks()">&times;</a></span>
+             <a href="#home">Find a Doctor</a>
+             <a href="#home">Specialities</a>
+             <a href="#news">Book An Appointement</a>
+           <div class="dropdown">
+             <span onClick="myFunction()" class="dropbtn"><a href="#">Servies <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+               <div class="dropdown-content">
+               <a href="heart.html">Heart Care</a>
+               <a href="heart.html">Bones</a>
+               <a href="heart.html">Skin Care</a>
+             </div>
+           </div>
+           </div>
+           <button style="float:right;margin:30px 30px; 0 0;border-radius:10px" class="openbtnOfLinks" onClick="openNavOfLinks()">☰</button>
+         </div>
+    </header>
+     <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+      <div class="overlay-content">
+     <table style="width:80%; padding:20px; border:1px solid White; border-collapse:collapse; margin-bottom:50px" align="center">
+       <tbody>
+       <tr>
+         <th><u>State</u></th>
+         <th><u>Location</u></th>
+         <th><u>Phone No.</u></th>
+       </tr>
+       <tr>
+         <td rowspan="4">Delhi NCR</td>
+         <td>Delhi</td>
+         <td rowspan="4"><a href="tel:1505155">1505155</a></td>
+       </tr>
+       <tr>
+         <td>Gurugram</td>
+       </tr>
+       <tr>
+         <td>Noida</td>
+       </tr>
+       <tr>
+         <td>Faridabad</td>
+       </tr>
+       <tr>
+         <td rowspan="3">Punjab</td>
+         <td>Amritsar</td>
+         <td rowspan="3"><a href="tel:+918984566685">+918984566685</a></td>
+       </tr>
+       <tr>
+         <td>Ludhiana</td>
+       </tr>
+       <tr>
+         <td>Mohali</td>
+       </tr>
+       <tr>
+         <td>West Bengal</td>
+         <td>Anandapur</td>
+         <td> <a href="tel:+105711">+105711</a> </td>
+       </tr>
+       <tr>
+         <td>Rajasthan</td>
+         <td>Jaipur</td>
+         <td><a href="tel:+916565465465">+916565465465</a> </td>
+       </tr>
+       <tr>
+         <td>Uttarakhand</td>
+         <td>Dehradhun</td>
+         <td><a href="tel:+914554154874">+914554154874</a> </td>
+       </tr>
+       <tr>
+         <td rowspan="2">Karnataka</td>
+         <td>Bengluru</td>
+         <td rowspan="2"><a href="tel:+915465488595">+915465488595</a> </td>
+       </tr>
+       <tr>
+         <td>Richmond Town</td>
+       </tr>
+       <tr>
+         <td>Maharashtra</td>
+         <td>Mumbai</td>
+         <td><a href="tel:949816645">949816645</a> </td>
+       </tr>
+       </tbody>
+     </table>
+   </div>
+ </div>
+ <!--slide bar-->
+ <section>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+       <img src="IMAGES\1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+       <img src="IMAGES\2.jpg" style="width:100%">
+     <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+     <div class="numbertext">3 / 4</div>
+      <img src="IMAGES\3.jpg" style="width:100%">
+     <div class="text">Caption Three</div>
+    </div>
+    <div class="mySlides fade">
+     <div class="numbertext">4 /4</div>
+      <img src="IMAGES\4.jpg" style="width:100%">
+     <div class="text">Caption Three</div>
+    </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+     <span class="dot"></span>
+     <span class="dot"></span>
+     <span class="dot"></span>
+     <span class="dot"></span>
+    </div>
+</section>
+<!--Images section-->
+<section>
+  <div class="section2" style="border-bottom:2px solid green; padding:30px;">
+    <h1 style="text-align:center">COVID-19 Healing Touch</h1>
+    <div class="row">
+      <div class="column">
+        <img src="IMAGES\65.png" alt="Snow" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="IMAGES\FHL-INT-BY-9.jpg" alt="Forest" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="IMAGES\media1.jpg" alt="Mountains" style="width:100%">
+      </div>
+    </div>
+  <div class="row">
+    <div class="column">
+      <img src="IMAGES\10.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMAGES\12.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="IMAGES\13.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+</section>
+<!--team section start from here-->
+<hr style="border-style: none; border-bottom: dotted; border-color: #000000; border-width: thick;width:20%; margin-top:4em;margin-bottom:4em; height:0px;" />
+<section style="padding:30px; background-color:#cfcfcf">
+   <div><h3 style="text-align:center;margin-bottom:2em">Meet Our Team Of Experts</h3></div>
+ <div class="section3">
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team4.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team4.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team4.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="card">
+      <img src="IMAGES\team4.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Book An Appointment</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- patients sections-->
+<hr style="border-style: none; border-bottom: dotted; border-color: #000000; border-width: thick;width:20%; margin-top:4em;margin-bottom:4em; height:0px;" />
+<section style="border-bottom:2px solid green;border-top:2px solid green; background-color: #ccfff8">
+  <h3 style="text-align: center">Breakthrough Cases Of Patientes</h3>
+  <div class="patients" style="padding:30px;">
+      <div class="patientsColumn">
+        <img src="IMAGES\team1.jpg" alt="Jane" style="width:100%">
+        </div>
+        <div class="patientsColumn">
+          <h2 class="headingOfPatient">Jane Doe</h2>
+          <p class="aboutUsText">Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="aboutUsText">example@example.com</p>
+         </div>
+        <div class="patientsColumn">
+          <img src="IMAGES\team1.jpg" alt="Jane" style="width:100%">
+          </div>
+          <div class="patientsColumn" >
+            <h2 class="headingOfPatient">Jane Doe</h2>
+            <p class="aboutUsText">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p class="aboutUsText">example@example.com</p>
+        </div>
+  </div>
+</section>
+<hr style="border-style: none; border-bottom: dotted; border-color: #000000; border-width: thick;width:20%; margin-top:4em;margin-bottom:4em; height:0px;" />
+<div style="width:100%; text-align:center">
+<iframe style="padding:20px 40px" width="800px" height="600px" src="https://www.youtube.com/embed/TNQsmPf24go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<section class="article" style="background-color:#fecfff">
+  <h3 style=" padding:50px 0 0 100px;margin-bottom:0;">News & Events</h3>
+   <div class="newsSection">
+     <div class="newsImg">
+       <img src="IMAGES\10.png" alt="??????????" width="100%">
+     </div>
+     <div class="newsImg">
+       <p style="line-height:2; font-size:0.8em; margin-top:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet velit vitae aliquet euismod. Curabitur blandit malesuada turpis, vitae fringilla tellus volutpat eget.</p>
+     </div>
+     <div class="newsImg">
+       <iframe class="video" width="320" height="200" src="https://www.youtube.com/embed/izGwDsrQ1eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+     <div class="newsImg">
+       <iframe class="video" width="320" height="200" src="https://www.youtube.com/embed/izGwDsrQ1eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+   </div>
+</section>
+<div style="width:100%;background-color:green;height:10px; margin:50px 0 10px;"></div>
+<footer>
+  <div class="wrapper">
+  <div class="copyRight">
+  <p>&#169; 2019 Fortis Healthcare. All Rights Reserved.</p>
+  <div class="footerLinks">
+  <a href="#">Privacy Policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+  <a href="#">Online payment & refund policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+  <a href="#">Terms & Conditions</a>
+  </div>
+  </div>
+  <div class="copyRight">
+    <p>Stay In Touch With Us</p>
+    <div class="socialMediaIcons">
+    <span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+    <span><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></span>
+    <span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+    <span> <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> </span>
+  </div>
+  </div>
+</div>
+</footer>
+    <!-- javascript start-->
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every  seconds
+}
+</script>
+
+
+<!---------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+    <script>
+    function openNavOfLinks() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeNavOfLinks() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height= "0%";
+}
+</script>
+ </body>
+</html>

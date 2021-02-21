@@ -1,0 +1,258 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+    <link rel="icon" type="image/png" href="IMAGES\2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="border-bottom:2px solid green;">
+       <div class="topnav">
+         <div class="search-container">
+           <form action="/action_page.php">
+           <input type="text" placeholder="Search.." name="search">
+             <button type="submit" style="font-size:1.15em;"><i class="fa fa-search"></i></button>
+           </form>
+           </div>
+            <div class="top" style="float:right;">
+            <span class="emergencyNo" onClick="openNav()"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;Emergency No &nbsp;<i class="fa fa-caret-down"
+            aria-hidden="true"></i></a></span>
+             <span class="ambulance" onClick="openNav()"style="float:right" ><a href="#"><i  class="fa fa-ambulance fa-2x" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="top" style="float:right;">
+             <span class="emergencyNo"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact &nbsp;</a></span>
+             <span class="ambulance"style="" ><a href="contact.html"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+             <div class="top" style="float:right;">
+              <span class="emergencyNo"><a href="aboutus.html"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp;About &nbsp;</a></span>
+               <span class="ambulance"style="" ><a href="aboutus.html"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+             <div class="top" style="float:right;">
+              <span class="emergencyNo"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home &nbsp;</a></span>
+              <span class="ambulance"style="" ><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+            </div>
+            <div class="sticky" id="myTopnav">
+              <div class="logo">
+             <img class="dropdown" title="Hospiatl" src="IMAGES\2.png" alt="Hospiatl Logo">
+              </div>
+            <div class="sidepanel" id="mySidepanel">
+              <span class="cross"><a href="javascript:void(0)" class="closebtnOfLinks" onClick="closeNavOfLinks()">&times;</a></span>
+               <a href="#home">Find a Doctor</a>
+               <a href="#home">Specialities</a>
+               <a href="#news">Book An Appointement</a>
+             <div class="dropdown">
+               <span onClick="myFunction()" class="dropbtn"><a href="#">Servies <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+                 <div class="dropdown-content">
+                 <a href="#">Heart Care</a>
+                 <a href="#">Bones</a>
+                 <a href="#">Skin Care</a>
+               </div>
+             </div>
+             </div>
+             <button style="float:right;margin:30px 30px; 0 0;border-radius:10px" class="openbtnOfLinks" onClick="openNavOfLinks()">☰</button>
+           </div>
+    </header>
+     <div id="myNav" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+     <div class="overlay-content">
+     <table style="width:80%; padding:20px; border:1px solid White; border-collapse:collapse; margin-bottom:50px" align="center">
+      <tbody>
+      <tr>
+        <th><u>State</u></th>
+        <th><u>Location</u></th>
+        <th><u>Phone No.</u></th>
+      </tr>
+      <tr>
+        <td rowspan="4">Delhi NCR</td>
+        <td>Delhi</td>
+        <td rowspan="4"><a href="tel:1505155">1505155</a></td>
+      </tr>
+      <tr>
+        <td>Gurugram</td>
+      </tr>
+      <tr>
+
+        <td>Noida</td>
+      </tr>
+      <tr>
+        <td>Faridabad</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Punjab</td>
+        <td>Amritsar</td>
+        <td rowspan="3"><a href="tel:+918984566685">+918984566685</a></td>
+      </tr>
+      <tr>
+        <td>Ludhiana</td>
+      </tr>
+      <tr>
+        <td>Mohali</td>
+      </tr>
+      <tr>
+        <td>West Bengal</td>
+        <td>Anandapur</td>
+        <td> <a href="tel:+105711">+105711</a> </td>
+      </tr>
+      <tr>
+        <td>Rajasthan</td>
+        <td>Jaipur</td>
+        <td><a href="tel:+916565465465">+916565465465</a> </td>
+      </tr>
+      <tr>
+        <td>Uttarakhand</td>
+        <td>Dehradhun</td>
+        <td><a href="tel:+914554154874">+914554154874</a> </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Karnataka</td>
+        <td>Bengluru</td>
+        <td rowspan="2"><a href="tel:+915465488595">+915465488595</a> </td>
+      </tr>
+      <tr>
+        <td>Richmond Town</td>
+      </tr>
+      <tr>
+        <td>Maharashtra</td>
+        <td>Mumbai</td>
+        <td><a href="tel:949816645">949816645</a> </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+     </div>
+<!------------------------------------------------>
+<div style="width:100%">
+<div> <img src="IMAGES/heart-img.jpg" alt="heart" width="100%"/> </div>
+</div>
+<div style="width:100%;background-color:#009900;padding:10px;text-align:center;margin:20 0px">Heart Transplant</div>
+<section>
+<div style="padding:0 30px"><p style="line-height:2;">Heart Transplant is one of the major surgeries which involves removal of the patient's diseased or unhealthy heart and then its replacement with the healthy heart of a deceased donor. Fortis brings together a multidisciplinary and distinguished team of heart transplant specialists which comprises of skilled cardiac surgeons, cardiologists, anesthesiologists, critical care Intensivists, Interventional Radiologists and well trained technical and nursing staff along with some other related healthcare professionals. The transplant department endeavors to render outstanding patient care, education programs and conducting advanced research. The surgeons use innovative and highly advanced technologies to treat the patients successfully with diseases like heart failure which can occur due to various reasons such as Coronary artery disease, congenital heart defect, cardiomyopathy, Heart valve disease, etc or any other complex heart associated problems requiring a transplant.</p></div>
+<div style="padding:0 30px"><p style="line-height:2;">Heart Transplant is one of the major surgeries which involves removal of the patient's diseased or unhealthy heart and then its replacement with the healthy heart of a deceased donor. Fortis brings together a multidisciplinary and distinguished team of heart transplant specialists which comprises of skilled cardiac surgeons, cardiologists, anesthesiologists, critical care Intensivists, Interventional Radiologists and well trained technical and nursing staff along with some other related healthcare professionals. The transplant department endeavors to render outstanding patient care, education programs and conducting advanced research. The surgeons use innovative and highly advanced technologies to treat the patients successfully with diseases like heart failure which can occur due to various reasons such as Coronary artery disease, congenital heart defect, cardiomyopathy, Heart valve disease, etc or any other complex heart associated problems requiring a transplant.</p></div>
+</section>
+<!--------------------------------------->
+<footer>
+  <div class="wrapper">
+  <div class="copyRight">
+  <p>&#169; 2019 Fortis Healthcare. All Rights Reserved.</p>
+  <div class="footerLinks">
+  <a href="#">Privacy Policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+  <a href="#">Online payment & refund policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+  <a href="#">Terms & Conditions</a>
+  </div>
+  </div>
+  <div class="copyRight">
+    <p>Stay In Touch With Us</p>
+    <div class="socialMediaIcons">
+    <span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+    <span><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></span>
+    <span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+    <span> <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> </span>
+  </div>
+  </div>
+</div>
+</footer>
+    <!------------------------------------------------------->
+    <script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+    </script>
+        <script>
+        function openNavOfLinks() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNavOfLinks() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height= "0%";
+}
+</script>
+</body>
+</html>
+

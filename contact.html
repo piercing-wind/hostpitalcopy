@@ -1,0 +1,354 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+    <link rel="icon" type="image/png" href="IMAGES\2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="border-bottom:2px solid green;">
+       <div class="topnav">
+         <div class="search-container">
+           <form action="/action_page.php">
+           <input type="text" placeholder="Search.." name="search">
+             <button type="submit" style="font-size:1.15em;"><i class="fa fa-search"></i></button>
+           </form>
+           </div>
+            <div class="top" style="float:right;">
+            <span class="emergencyNo" onClick="openNav()"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;Emergency No &nbsp;<i class="fa fa-caret-down"
+            aria-hidden="true"></i></a></span>
+             <span class="ambulance" onClick="openNav()"style="float:right" ><a href="#"><i  class="fa fa-ambulance fa-2x" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="top" style="float:right;">
+             <span class="emergencyNo"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact &nbsp;</a></span>
+             <span class="ambulance"style="" ><a href="contact.html"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+             <div class="top" style="float:right;">
+              <span class="emergencyNo"><a href="aboutus.html"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp;About &nbsp;</a></span>
+               <span class="ambulance"style="" ><a href="aboutus.html"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+             <div class="top" style="float:right;">
+              <span class="emergencyNo"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home &nbsp;</a></span>
+              <span class="ambulance"style="" ><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+            </div>
+            <div class="sticky" id="myTopnav">
+              <div class="logo">
+             <img class="dropdown" title="Hospiatl" src="IMAGES\2.png" alt="Hospiatl Logo">
+              </div>
+            <div class="sidepanel" id="mySidepanel">
+              <span class="cross"><a href="javascript:void(0)" class="closebtnOfLinks" onClick="closeNavOfLinks()">&times;</a></span>
+               <a href="#home">Find a Doctor</a>
+               <a href="#home">Specialities</a>
+               <a href="#news">Book An Appointement</a>
+             <div class="dropdown">
+               <span onClick="myFunction()" class="dropbtn"><a href="#">Servies <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+                 <div class="dropdown-content">
+                 <a href="heart.html">Heart Care</a>
+                 <a href="heart.html">Bones</a>
+                 <a href="heart.html">Skin Care</a>
+               </div>
+             </div>
+             </div>
+             <button style="float:right;margin:30px 30px; 0 0;border-radius:10px" class="openbtnOfLinks" onClick="openNavOfLinks()">☰</button>
+           </div>
+    </header>
+     <div id="myNav" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+     <div class="overlay-content">
+     <table style="width:80%; padding:20px; border:1px solid White; border-collapse:collapse; margin-bottom:50px" align="center">
+      <tbody>
+      <tr>
+        <th><u>State</u></th>
+        <th><u>Location</u></th>
+        <th><u>Phone No.</u></th>
+      </tr>
+      <tr>
+        <td rowspan="4">Delhi NCR</td>
+        <td>Delhi</td>
+        <td rowspan="4"><a href="tel:1505155">1505155</a></td>
+      </tr>
+      <tr>
+        <td>Gurugram</td>
+      </tr>
+      <tr>
+        <td>Noida</td>
+      </tr>
+      <tr>
+        <td>Faridabad</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Punjab</td>
+        <td>Amritsar</td>
+        <td rowspan="3"><a href="tel:+918984566685">+918984566685</a></td>
+      </tr>
+      <tr>
+        <td>Ludhiana</td>
+      </tr>
+      <tr>
+        <td>Mohali</td>
+      </tr>
+      <tr>
+        <td>West Bengal</td>
+        <td>Anandapur</td>
+        <td> <a href="tel:+105711">+105711</a> </td>
+      </tr>
+      <tr>
+        <td>Rajasthan</td>
+        <td>Jaipur</td>
+        <td><a href="tel:+916565465465">+916565465465</a> </td>
+      </tr>
+      <tr>
+        <td>Uttarakhand</td>
+        <td>Dehradhun</td>
+        <td><a href="tel:+914554154874">+914554154874</a> </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Karnataka</td>
+        <td>Bengluru</td>
+        <td rowspan="2"><a href="tel:+915465488595">+915465488595</a> </td>
+      </tr>
+      <tr>
+        <td>Richmond Town</td>
+      </tr>
+      <tr>
+        <td>Maharashtra</td>
+        <td>Mumbai</td>
+        <td><a href="tel:949816645">949816645</a> </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+     </div>
+<!------------------------------------------------>
+<section>
+  <div class="address">
+  <div class="floating">
+    <div class="contact" style="padding:10 30 10 30px">
+      <h2 style="border:2px solid grey; padding:20px; margin-bottom:0;">Contact Us</h2>
+    </div>
+          <!--<div class="paraLine" style="padding:0 0 10 33; font-size:15px;">
+           <p>For country specific career opportunities, patient queries and other questions visit the respective country websites</p>
+          </div>
+          <div class="custom-select" style="width:300px; margin: 0 0 30px 30px;background-color:black;">
+            <select>
+              <option value="0">select your Country <i class="fa fa-caret-down" aria-hidden="true"></i></option>
+              <option value="1">India</option>
+              <option value="2">Bangala Desh</option>
+              <option value="3">Shri Lanka</option>
+            </select>
+          </div>-->
+ <div class="heading6">
+   <h6 style="border-bottom:2px solid red; padding:20px 20px 5px 20px; margin:0 0 30px 30px; width:250px;">Fortis Healthcare Ltd.</h6>
+ </div>
+  <div class="address">
+    <address style="margin-left:30px; font-size:15px;">
+      <p>Tower A, Unitech Business Park,</p>
+      <p>Block - F, South City 1, Sector - 41,</p>
+      <p>Gurgaon, Haryana - 122001</p>
+       <p>Contact Numbers - +91 124 4921021, +91- 124 4921071, +91 124 4921033</p>
+       <p>Fax number - +91 124 492 1041</p>
+       <p>For general/business related queries contact: <a href="#">reachus@fortishealthcare.com</a></p>
+       <p>For investors related queries contact: investor.<a href="#">relations@fortishealthcare.com</a></p>
+       <p>For international patient queries contact: <a href="#">ips@fortishealthcare.com</a></p>
+    </address>
+    </div>
+   </div>
+  <div class="floating">
+    <div class="contact" style="padding:10 30px 10 30px">
+      <h2 style="border:2px solid grey; padding:20px; margin-bottom:0; text-align:center;">Feedback And Query</h2>
+     </div>
+   <!-- <div class="paraLine" style="padding:0 0 10 33; font-size:15px;">
+     <p>For country specific career opportunities, patient queries and other questions visit the respective country websites</p>
+    </div>-->
+    <div class="heading6">
+      <h6 style="border-bottom:2px solid red; padding:20px 20px 5px 20px; margin:0 0 30px 30px; width:250px;">Personal Details</h6>
+    </div>
+    <div class="formRow">
+      <div class="col-75">
+       <div class="Fformontainer">
+        <form action="/action_page.php">
+         <!--<div style="width:95%;margin: 10px 60px 30px 30px;">
+         <label for="TypeofQuery">Type of Query</label>
+            <select id="TypeofQuery" name="TypeofQuery" >
+              <option value=""></option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+           </div>-->
+       <div class="formRow">
+         <div class="col-50">
+           <label for="fname"><i class="fa fa-user"></i> Last Name</label>
+           <input class="formInput" type="text" id="fname" name="firstname" placeholder="John M. Doe">
+           <label for="email"><i class="fa fa-envelope"></i> Email</label>
+           <input class="formInput" type="text" id="email" name="email" placeholder="john@example.com">
+           <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+           <input class="formInput" type="text" id="adr" name="address" placeholder="Enter Street Address..">
+           <label style="width:100%" for="city"><i class="fa fa-institution"></i> City</label>
+           <input class="formInput" type="text" id="city" name="city" placeholder="Enter city..">
+
+          <div class="formRow">
+             <div class="col-50">
+             </div>
+             <!--<div class="col-50">
+               <label for="expyear">Exp Year</label>
+               <input type="text" id="expyear" name="expyear" placeholder="2018">
+             </div>-->
+           </div>
+         </div>
+
+         <div class="col-50">
+           <label for="cname">Last Name</label>
+           <input class="formInput" type="text" id="lname" name="lastname" placeholder="Enter your Last Name.. ">
+               <label for="state">State</label>
+               <input class="formInput" type="text" id="state" name="state" placeholder="Enter state..">
+                <label for="zip">Zip</label>
+               <input class="formInput" type="text" id="zip" name="zip" placeholder="10001">
+           <!--<div class="row">
+             <div class="col-50">
+               <label for="cvv">CVV</label>
+               <input type="text" id="cvv" name="cvv" placeholder="352">
+             </div>
+           </div>-->
+               </div>
+               </div>
+               <!--<label>
+                 <input class="formInput" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+               </label>-->
+               <div class="subject" style="margin:0 30px 0 30px">
+                 <label for="subject">Subject</label>
+                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;width:100%;  resize: vertical;"></textarea>
+               </div>
+             <input type="submit" value="Submit" class="btn">
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+<!--------------------------------------->
+<footer>
+  <div class="wrapper">
+  <div class="copyRight">
+  <p>&#169; 2019 Fortis Healthcare. All Rights Reserved.</p>
+  <div class="footerLinks">
+  <a href="#">Privacy Policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+  <a href="#">Online payment & refund policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+  <a href="#">Terms & Conditions</a>
+  </div>
+  </div>
+  <div class="copyRight">
+    <p>Stay In Touch With Us</p>
+    <div class="socialMediaIcons">
+    <span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+    <span><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></span>
+    <span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+    <span> <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> </span>
+  </div>
+  </div>
+</div>
+</footer>
+    <!------------------------------------------------------->
+    <script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+    </script>
+        <script>
+        function openNavOfLinks() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNavOfLinks() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height= "0%";
+}
+</script>
+</body>
+</html>

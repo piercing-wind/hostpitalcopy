@@ -1,0 +1,181 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+    <link rel="icon" type="image/png" href="IMAGES\2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="border-bottom:2px solid green;">
+       <div class="topnav">
+         <div class="search-container">
+           <form action="/action_page.php">
+           <input type="text" placeholder="Search.." name="search">
+             <button type="submit" style="font-size:1.15em"><i class="fa fa-search"></i></button>
+           </form>
+           </div>
+            <div class="top" style="float:right;">
+            <span class="emergencyNo" onClick="openNav()"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;Emergency No &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+             <span class="ambulance" onClick="openNav()"style="float:right" ><a href="#"><i  class="fa fa-ambulance fa-2x" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="top" style="float:right;">
+             <span class="emergencyNo"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact &nbsp;</a></span>
+             <span class="ambulance"style="" ><a href="contact.html"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+             <div class="top" style="float:right;">
+              <span class="emergencyNo"><a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i>&nbsp;About &nbsp;</a></span>
+               <span class="ambulance"style="" ><a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+             <div class="top" style="float:right;">
+              <span class="emergencyNo"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home &nbsp;</a></span>
+              <span class="ambulance"style="" ><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></span>
+             </div>
+            </div>
+          <div class="sticky" id="myTopnav">
+            <div class="logo">
+           <img class="dropdown" title="Hospiatl" src="IMAGES\2.png" alt="Hospiatl Logo">
+            </div>
+          <div class="sidepanel" id="mySidepanel">
+            <span class="cross"><a href="javascript:void(0)" class="closebtnOfLinks" onClick="closeNavOfLinks()">&times;</a></span>
+             <a href="#home">Find a Doctor</a>
+             <a href="#home">Specialities</a>
+             <a href="#news">Book An Appointement</a>
+           <div class="dropdown">
+             <span onClick="myFunction()" class="dropbtn"><a href="#">Servies <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+               <div class="dropdown-content">
+               <a href="heart.html">Heart Care</a>
+               <a href="heart.html">Bones</a>
+               <a href="heart.html">Skin Care</a>
+             </div>
+           </div>
+           </div>
+           <button style="float:right;margin:30px 30px; 0 0;border-radius:10px" class="openbtnOfLinks" onClick="openNavOfLinks()">☰</button>
+         </div>
+    </header>
+     <div id="myNav" class="overlay">
+     <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+     <div class="overlay-content">
+     <table style="width:80%; padding:20px; border:1px solid White; border-collapse:collapse; margin-bottom:50px" align="center">
+      <tbody>
+      <tr>
+        <th><u>State</u></th>
+        <th><u>Location</u></th>
+        <th><u>Phone No.</u></th>
+      </tr>
+      <tr>
+        <td rowspan="4">Delhi NCR</td>
+        <td>Delhi</td>
+        <td rowspan="4"><a href="tel:1505155">1505155</a></td>
+      </tr>
+      <tr>
+        <td>Gurugram</td>
+      </tr>
+      <tr>
+        <td>Noida</td>
+      </tr>
+      <tr>
+        <td>Faridabad</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Punjab</td>
+        <td>Amritsar</td>
+        <td rowspan="3"><a href="tel:+918984566685">+918984566685</a></td>
+      </tr>
+      <tr>
+        <td>Ludhiana</td>
+      </tr>
+      <tr>
+        <td>Mohali</td>
+      </tr>
+      <tr>
+        <td>West Bengal</td>
+        <td>Anandapur</td>
+        <td> <a href="tel:+105711">+105711</a> </td>
+      </tr>
+      <tr>
+        <td>Rajasthan</td>
+        <td>Jaipur</td>
+        <td><a href="tel:+916565465465">+916565465465</a> </td>
+      </tr>
+      <tr>
+        <td>Uttarakhand</td>
+        <td>Dehradhun</td>
+        <td><a href="tel:+914554154874">+914554154874</a> </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Karnataka</td>
+        <td>Bengluru</td>
+        <td rowspan="2"><a href="tel:+915465488595">+915465488595</a> </td>
+      </tr>
+      <tr>
+        <td>Richmond Town</td>
+      </tr>
+      <tr>
+        <td>Maharashtra</td>
+        <td>Mumbai</td>
+        <td><a href="tel:949816645">949816645</a> </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+     </div>
+
+        <div class="about-heading">
+          <h4>About Us</h4>
+        </div>
+        <section>
+           <div class="address" style="padding:30px">
+             <div class="floating">
+                <p class="aboutUsText" style="line-height:2.5;margin:0;">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities. Currently, the company operates its healthcare delivery services in India, Nepal, Dubai and Sri Lanka with 36 healthcare facilities (including projects under development), approximately 4,000 operational beds and over 415 diagnostics centres.Fortis Healthcare bagged 10 awards in various categories at the FICCI Medical Travel Value Awards 2019.- 2019 Summit.</p>
+             </div>
+             <div class="floating" style="padding:20px">
+               <img src="IMAGES\team2.jpg" alt="chimp" style="width:100%; height:auto;">
+             </div>
+           </div>
+        </section>
+
+     <footer>
+       <div class="wrapper">
+       <div class="copyRight">
+       <p>&#169; 2019 Fortis Healthcare. All Rights Reserved.</p>
+       <div class="footerLinks">
+       <a href="#">Privacy Policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+       <a href="#">Online payment & refund policy</a><span style="font-size:10px;">&nbsp;&nbsp;|&nbsp;</span>
+       <a href="#">Terms & Conditions</a>
+       </div>
+       </div>
+       <div class="copyRight">
+         <p>Stay In Touch With Us</p>
+         <div class="socialMediaIcons">
+         <span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+         <span><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></span>
+         <span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+         <span> <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> </span>
+       </div>
+       </div>
+     </div>
+     </footer>
+<!---------------------------------------------->
+<script>
+function openNavOfLinks() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNavOfLinks() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.height= "0%";
+}
+</script>
+</body>
+</html>
